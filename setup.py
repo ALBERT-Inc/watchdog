@@ -77,9 +77,11 @@ if is_macos or os.getenv('FORCE_MACOS_MACHINE', '0') == '1':
         ),
     ]
 
-extras_require = {
-    'watchmedo': ['PyYAML>=3.10', 'argh>=0.24.1'],
-}
+install_requires = [
+    "pathtools>=0.1.1",
+    'pyobjc-framework-Cocoa>=4.2.2 ; sys_platform == "darwin"',
+    'pyobjc-framework-FSEvents>=4.2.2 ; sys_platform == "darwin"',
+]
 
 with open('README.rst', encoding='utf-8') as f:
     readme = f.read()
@@ -142,14 +144,11 @@ setup(name="watchdog",
       package_dir={'': SRC_DIR},
       packages=find_packages(SRC_DIR),
       include_package_data=True,
-      extras_require=extras_require,
+      install_requires=install_requires,
       cmdclass={
           'build_ext': build_ext,
       },
       ext_modules=ext_modules,
-      entry_points={'console_scripts': [
-          'watchmedo = watchdog.watchmedo:main [watchmedo]',
-      ]},
       python_requires='>=3.6',
       zip_safe=False
 )
