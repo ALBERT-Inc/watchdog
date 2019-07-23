@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 # Copyright 2014 Thomas Amland <thomas.amland@gmail.com>
+# Copyright 2019 ALBERT Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +15,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
+# test_watchmedo.py is removed due to licensing issue.
 try:
     from queue import Queue, Empty  # Python 3
 except ImportError:

@@ -164,8 +164,12 @@ Copyright 2011 `Yesudeep Mangalapilly`_.
 
 Copyright 2012 Google, Inc.
 
+Copyright 2019 ALBERT Inc.
+
 Project `source code`_ is available at Github. Please report bugs and file
 enhancement requests at the `issue tracker`_.
+
+This file has been modified by ALBERT Inc. to remove watchmedo features to resolve the licensing issue.
 
 Why Watchdog?
 -------------
