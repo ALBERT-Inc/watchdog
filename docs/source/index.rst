@@ -63,3 +63,14 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+Licensing
+---------
+Licensed under the terms of the `Apache License, version 2.0`_.
+
+Copyright 2019 ALBERT Inc.
+
+examples/logger.py, examples/tricks.json and examples/tricks.yaml
+are removed due to licensing issue.
+
+.. links:
+.. _Apache License, version 2.0: http://www.apache.org/licenses/LICENSE-2.0
